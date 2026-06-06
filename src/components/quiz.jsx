@@ -18,8 +18,18 @@ function Quiz() {
       options: ["Athi", "Nairobi", "Tana", "Chania"],
       answer: "Tana",
     },
+    {
+      question: "Which is a plateau within a plateau?",
+      options: ["Chalbi", "Nyika", "Loita", "Yatta"],
+      answer: "Nyika",
+    },
+    {
+      question: "When was the new constitution adopted?",
+      options: [2012, 2002, 2024, 2010],
+      answer: 2010,
+    },
   ];
-  const initialAnswers = [null, null, null];
+  const initialAnswers = [null, null, null, null];
   const [userAnswers, setUserAnswers] = useState(initialAnswers);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [isQuizFinished, setIsQuizFinished] = useState(false);
